@@ -1,0 +1,32 @@
+{
+  "id": "ML035",
+  "slug": "35_predicting_job_market_trends",
+  "name": "Predicting Job Market Trends",
+  "category": "Forecasting / NLP",
+  "type": "Time Series",
+  "status": "ready",
+  "dataset": "job_postings_sample",
+  "model": "Skill Frequency Extractor + Trend Forecaster",
+  "metrics": [
+    "mae",
+    "rmse",
+    "growth_rate_error"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Labor Analytics Lab",
+  "tags": [
+    "job-market",
+    "labor-trends",
+    "forecasting",
+    "skills-analysis"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "employment",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Labor market analytics and forecasting engine tracking emergent technology skills, hiring demand, and regional salary trajectories.",
+  "limitations": "Posting volume fluctuations can be skewed by duplicate aggregator postings and phantom job listings.",
+  "responsible_use_notes": "Provides macro labor intelligence; must not be used to make discriminatory individual employment or compensation decisions."
+}

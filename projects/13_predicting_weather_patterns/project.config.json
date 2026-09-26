@@ -1,0 +1,29 @@
+{
+  "id": "ML013",
+  "slug": "13_predicting_weather_patterns",
+  "name": "Predicting Weather Patterns",
+  "category": "Time Series",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "meteorological_obs_sample",
+  "model": "Multivariate Weather Regressor (LightGBM/RandomForest)",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Geospatial Team",
+  "tags": [
+    "weather",
+    "time-series",
+    "climate",
+    "forecasting"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Multivariate meteorological prediction module forecasting temperature, barometric pressure, humidity, and precipitation probability.",
+  "limitations": "Atmospheric chaos limits deterministic long-range forecasts past short-term horizons.",
+  "responsible_use_notes": "Research forecasting module. For life-safety severe storm alerts, rely on national meteorological authorities."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ML002",
+  "slug": "02_sentiment_analysis_on_product_reviews",
+  "name": "Sentiment Analysis On Product Reviews",
+  "category": "NLP",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "product_reviews_sample",
+  "model": "TF-IDF + LogisticRegression / Transformer Baseline",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge NLP Team",
+  "tags": [
+    "nlp",
+    "sentiment-analysis",
+    "text-classification",
+    "tf-idf"
+  ],
+  "complexity_level": "beginner",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "NLP sentiment analysis system for customer reviews providing positive, negative, and neutral polarity detection.",
+  "limitations": "Sarcasm, colloquialisms, and multilingual text may reduce classification accuracy.",
+  "responsible_use_notes": "Do not use solely to suppress negative customer feedback or penalize support staff."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ML037",
+  "slug": "37_predicting_employee_performance",
+  "name": "Predicting Employee Performance",
+  "category": "Regression / Classification",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "hr_evaluations_sample",
+  "model": "Constrained Fair Linear Model + Disparate Impact Auditor",
+  "metrics": [
+    "mae",
+    "r2_score",
+    "disparate_impact_ratio",
+    "equal_opportunity_diff"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge People Analytics Team",
+  "tags": [
+    "hr-analytics",
+    "fairness",
+    "bias-audit",
+    "people-analytics"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "employment",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "HR analytics research module modeling employee project velocity with explicit algorithmic bias and disparate impact fairness constraints.",
+  "limitations": "Standard quantitative metrics cannot capture mentorship, team morale contributions, or unrecorded collaborative assistance.",
+  "responsible_use_notes": "STRICT ETHICS & LABOR POLICY: Strictly prohibited from making automated hiring, promotion, salary, or termination decisions."
+}

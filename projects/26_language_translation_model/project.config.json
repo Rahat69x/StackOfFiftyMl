@@ -1,0 +1,29 @@
+{
+  "id": "ML026",
+  "slug": "26_language_translation_model",
+  "name": "Language Translation Model",
+  "category": "NLP",
+  "type": "NLP",
+  "status": "ready",
+  "dataset": "bilingual_sentences_sample",
+  "model": "Seq2Seq Encoder-Decoder with Bahdanau Attention Baseline",
+  "metrics": [
+    "bleu_score",
+    "chrf_score",
+    "exact_match_ratio"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Multilingual Lab",
+  "tags": [
+    "nlp",
+    "translation",
+    "seq2seq",
+    "attention"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Machine translation research module translating phrases between language pairs using sequence-to-sequence neural architectures.",
+  "limitations": "Prone to hallucinations or literal mistranslations of cultural idioms and legal terminology.",
+  "responsible_use_notes": "Not certified for official legal, diplomatic, or medical document translation without professional certified human translators."
+}

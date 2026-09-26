@@ -1,0 +1,31 @@
+{
+  "id": "ML006",
+  "slug": "06_handwriting_recognition",
+  "name": "Handwriting Recognition",
+  "category": "Computer Vision",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "handwritten_digits_chars_sample",
+  "model": "Convolutional Neural Network (CNN)",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge CV Team",
+  "tags": [
+    "computer-vision",
+    "ocr",
+    "handwriting",
+    "cnn"
+  ],
+  "complexity_level": "beginner",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Handwriting character and digit recognition system featuring grayscale normalizer, morphological cleaning, and deep CNN classifier.",
+  "limitations": "Accuracy degrades on cursive ligatures or degraded scanned documents.",
+  "responsible_use_notes": "Ensure training covers diverse handwriting cultures and styles without systemic bias."
+}

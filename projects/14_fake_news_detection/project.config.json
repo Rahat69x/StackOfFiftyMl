@@ -1,0 +1,34 @@
+{
+  "id": "ML014",
+  "slug": "14_fake_news_detection",
+  "name": "Fake News Detection",
+  "category": "NLP",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "news_articles_sample",
+  "model": "TF-IDF + PassiveAggressiveClassifier / Explainable Logistic Regression",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge NLP Team",
+  "tags": [
+    "nlp",
+    "text-classification",
+    "misinformation",
+    "explainability"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "elections",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Text classification research system analyzing journalistic stylometry, sensationalist lexicon, and source credibility markers.",
+  "limitations": "Subject to bias toward mainstream publication styles; can flag satire or unorthodox legitimate investigative reporting as anomalous.",
+  "responsible_use_notes": "Probabilistic research tool only. Output must never be used as automated censorship or definitive truth arbitration."
+}

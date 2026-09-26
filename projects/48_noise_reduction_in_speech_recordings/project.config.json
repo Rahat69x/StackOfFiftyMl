@@ -1,0 +1,29 @@
+{
+  "id": "ML048",
+  "slug": "48_noise_reduction_in_speech_recordings",
+  "name": "Noise Reduction In Speech Recordings",
+  "category": "Audio",
+  "type": "Audio",
+  "status": "ready",
+  "dataset": "noisy_speech_spectrograms_sample",
+  "model": "Spectral Subtraction / Masking U-Net Autoencoder",
+  "metrics": [
+    "snr_improvement_db",
+    "pesq_proxy",
+    "latency_ms"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Audio DSP Lab",
+  "tags": [
+    "audio",
+    "speech-enhancement",
+    "noise-reduction",
+    "dsp"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Audio signal enhancement pipeline isolating human voice waveforms and attenuating background acoustic noise using spectral subtraction.",
+  "limitations": "Extreme non-stationary noise can induce musical artifacts or phase distortions in the output audio.",
+  "responsible_use_notes": "Enhances speech clarity in videoconferencing and assistive hearing devices."
+}

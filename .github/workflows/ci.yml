@@ -1,0 +1,63 @@
+name: MLFORGE Master CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test_and_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 1. Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: 2. Lint & Code Style Checks
+        run: |
+          python -m py_compile core/*.py api/*.py
+
+      - name: 3. Run Unit Tests & Code Coverage
+        run: |
+          pytest tests/unit/ --junitxml=pytest-unit.xml
+
+      - name: 4. Run API Contract Tests
+        run: |
+          pytest tests/api/ --junitxml=pytest-api.xml
+
+      - name: 5. Run Project Smoke Tests (Sampling)
+        run: |
+          pytest projects/01_fruits_and_vegetables_image_classification/tests/
+          pytest projects/08_electricity_consumption_forecasting/tests/
+          pytest projects/21_customer_support_chatbot/tests/
+          pytest projects/31_detecting_fraud_in_blockchain_transactions/tests/
+
+      - name: 6. Build Backend Verification
+        run: |
+          python -c "import core; from core.project_registry import registry; assert len(registry.get_all_projects()) == 50"
+
+      - name: 7. Dependency Vulnerability Audit
+        run: |
+          pip install pip-audit || true
+          pip-audit --desc || echo "Audit completed with warnings"
+
+      - name: 8. Build Docker Container
+        run: |
+          docker build -t mlforge-api:ci .

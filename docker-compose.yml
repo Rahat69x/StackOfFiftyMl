@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: mlforge-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://mlforge_user:mlforge_pass@postgres:5432/mlforge
+      - REDIS_URL=redis://redis:6379/0
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - JWT_SECRET_KEY=mlforge_docker_dev_secret_key
+      - CORS_ALLOWED_ORIGINS=http://localhost:3000
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./experiments:/app/experiments
+      - ./reports:/app/reports
+    restart: unless-stopped
+
+  dashboard:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    container_name: mlforge-dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: mlforge-postgres
+    environment:
+      - POSTGRES_USER=mlforge_user
+      - POSTGRES_PASSWORD=mlforge_pass
+      - POSTGRES_DB=mlforge
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: mlforge-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.11.0
+    container_name: mlforge-mlflow
+    ports:
+      - "5000:5000"
+    command: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlflow_artifacts --host 0.0.0.0 --port 5000
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: mlforge-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: mlforge-grafana
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+  minio:
+    image: minio/minio:latest
+    container_name: mlforge-minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  minio_data:

@@ -1,0 +1,32 @@
+{
+  "id": "ML050",
+  "slug": "50_image_based_object_detection",
+  "name": "Image-Based Object Detection",
+  "category": "Computer Vision",
+  "type": "Computer Vision",
+  "status": "ready",
+  "dataset": "annotated_bboxes_sample",
+  "model": "Anchor-Free Object Detection Pipeline (YOLO/SSD Baseline)",
+  "metrics": [
+    "map_50",
+    "precision",
+    "recall",
+    "inference_fps"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Computer Vision Lab",
+  "tags": [
+    "computer-vision",
+    "object-detection",
+    "bounding-box",
+    "yolo"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "surveillance"
+  ],
+  "demo_mode_available": true,
+  "description": "Object detection computer-vision framework predicting 2D bounding boxes, confidence probabilities, and multi-class labels in digital imagery.",
+  "limitations": "Severe motion blur or small distant objects (<16x16 pixels) present lower detection recall.",
+  "responsible_use_notes": "Ensure surveillance privacy regulations (e.g. GDPR, local biometrics acts) are strictly adhered to in real-world deployments."
+}

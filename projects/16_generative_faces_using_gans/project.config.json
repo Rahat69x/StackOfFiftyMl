@@ -1,0 +1,32 @@
+{
+  "id": "ML016",
+  "slug": "16_generative_faces_using_gans",
+  "name": "Generative Faces Using GANs",
+  "category": "Generative AI",
+  "type": "Generative AI",
+  "status": "ready",
+  "dataset": "face_avatar_thumbnails_sample",
+  "model": "Deep Convolutional GAN (DCGAN) Architecture",
+  "metrics": [
+    "fid_score_proxy",
+    "generator_loss",
+    "discriminator_loss"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge GenAI Lab",
+  "tags": [
+    "generative-ai",
+    "gan",
+    "computer-vision",
+    "synthetic-media"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "personal_data",
+    "surveillance"
+  ],
+  "demo_mode_available": true,
+  "description": "Controlled generative image modeling implementation synthesizing low-resolution face avatars with balanced generator-discriminator dynamics.",
+  "limitations": "Susceptible to mode collapse and training artifacts without extensive multi-GPU hyperparameter tuning.",
+  "responsible_use_notes": "All generated imagery must be visibly marked as synthetic AI-generated content. Strictly prohibited for deepfake impersonation."
+}

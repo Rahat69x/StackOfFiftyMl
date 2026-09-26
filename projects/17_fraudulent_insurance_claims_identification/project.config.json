@@ -1,0 +1,35 @@
+{
+  "id": "ML017",
+  "slug": "17_fraudulent_insurance_claims_identification",
+  "name": "Fraudulent Insurance Claims Identification",
+  "category": "Security / Fraud",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "insurance_claims_sample",
+  "model": "Cost-Sensitive Random Forest + SMOTE / Permutation Explainability",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "pr_auc"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Risk & Fraud Team",
+  "tags": [
+    "fraud-detection",
+    "insurance",
+    "imbalanced-learning",
+    "explainability"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "insurance",
+    "finance",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Insurance fraud anomaly detection model targeting severe class imbalance with interpretable feature contributions.",
+  "limitations": "New fraudulent syndicates deliberately alter claims patterns to circumvent static rules.",
+  "responsible_use_notes": "STRICT ETHICAL NOTICE: Never automatically deny claims based solely on model scores; requires human claims adjustor review."
+}

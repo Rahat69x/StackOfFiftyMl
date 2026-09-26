@@ -1,0 +1,31 @@
+{
+  "id": "ML007",
+  "slug": "07_voice_controlled_assistant",
+  "name": "Voice-Controlled Assistant",
+  "category": "Audio / NLP",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "voice_commands_sample",
+  "model": "Acoustic Spectrogram Featurizer + Intent Router + Speech Synthesis",
+  "metrics": [
+    "intent_accuracy",
+    "wer_proxy",
+    "latency_ms"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Audio Team",
+  "tags": [
+    "audio",
+    "speech-recognition",
+    "intent-detection",
+    "tts"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Voice-controlled ML assistant pipeline integrating audio spectrogram processing, intent classification, command routing, and text-to-speech output.",
+  "limitations": "Susceptible to ambient noise and non-standard dialects or accents.",
+  "responsible_use_notes": "User audio data must not be stored without explicit permission; respect privacy controls."
+}

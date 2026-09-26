@@ -1,0 +1,35 @@
+{
+  "id": "ML018",
+  "slug": "18_human_activity_recognition_from_sensor_data",
+  "name": "Human Activity Recognition From Sensor Data",
+  "category": "Classification / Sensor",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "inertial_sensor_readings_sample",
+  "model": "1D-CNN + Random Forest on Tri-axial Signals",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Mobile & Wearables Team",
+  "tags": [
+    "sensor",
+    "wearables",
+    "har",
+    "iot",
+    "classification"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Wearable sensor processing system recognizing human physical activities (walking, ascending stairs, sitting, standing) from accelerometer and gyroscope streams.",
+  "limitations": "Device placement variation (pocket vs wrist) alters signal harmonics and reduces accuracy.",
+  "responsible_use_notes": "Fitness and research tracking only; not approved as an FDA-cleared fall detection medical device."
+}

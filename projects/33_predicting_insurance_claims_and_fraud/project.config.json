@@ -1,0 +1,34 @@
+{
+  "id": "ML033",
+  "slug": "33_predicting_insurance_claims_and_fraud",
+  "name": "Predicting Insurance Claims And Fraud",
+  "category": "Security / Fraud",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "actuarial_claims_sample",
+  "model": "Tweedie Claims Severity Regressor + Fraud Classifier",
+  "metrics": [
+    "mae",
+    "roc_auc",
+    "f1_score",
+    "gini_coefficient"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Actuarial AI Lab",
+  "tags": [
+    "insurance",
+    "actuarial",
+    "claims-prediction",
+    "fraud"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "insurance",
+    "finance",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Combined actuarial claims cost estimation and suspicious fraud pattern identification platform.",
+  "limitations": "Historical claim payouts reflect past settlement policies rather than absolute ground truth loss values.",
+  "responsible_use_notes": "HIGH-IMPACT SENSITIVE: Never make automated insurance denial or price surging decisions without certified actuarial oversight."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ML030",
+  "slug": "30_customer_churn_prediction_in_ecommerce",
+  "name": "Customer Churn Prediction In E-Commerce",
+  "category": "Classification",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "ecommerce_churn_sample",
+  "model": "Gradient Boosted Classifier + SHAP Explainability",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "pr_auc"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Growth Engineering Team",
+  "tags": [
+    "churn-prediction",
+    "ecommerce",
+    "customer-analytics",
+    "classification"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "E-commerce customer retention engine predicting churn likelihood from RFM (Recency, Frequency, Monetary) purchase statistics and engagement drop-offs.",
+  "limitations": "Does not observe external competitor promotions or offline life events driving customer disengagement.",
+  "responsible_use_notes": "Empowers customer success teams to offer proactive retention incentives."
+}

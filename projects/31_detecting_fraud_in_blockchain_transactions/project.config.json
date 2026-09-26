@@ -1,0 +1,34 @@
+{
+  "id": "ML031",
+  "slug": "31_detecting_fraud_in_blockchain_transactions",
+  "name": "Detecting Fraud In Blockchain Transactions",
+  "category": "Security / Fraud",
+  "type": "Anomaly Detection",
+  "status": "ready",
+  "dataset": "crypto_transactions_sample",
+  "model": "Graph Node Feature Aggregator + One-Class SVM",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "anomaly_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Blockchain Security Lab",
+  "tags": [
+    "blockchain",
+    "crypto",
+    "fraud-detection",
+    "anomaly-detection"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "finance",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Cryptocurrency transaction fraud detection module identifying wash trading, mixing patterns, and illicit wallet interactions.",
+  "limitations": "Rapidly evolving cryptographic obfuscation mixers and cross-chain hops may evade single-chain heuristics.",
+  "responsible_use_notes": "Supports AML (Anti-Money Laundering) compliance research; outputs require human forensic validation."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "ML039",
+  "slug": "39_emotional_text_to_speech_synthesis",
+  "name": "Emotional Text-To-Speech Synthesis",
+  "category": "Audio / Generative AI",
+  "type": "Generative AI",
+  "status": "ready",
+  "dataset": "expressive_speech_sample",
+  "model": "Emotion Conditioning Spectrogram Generator + Vocoder",
+  "metrics": [
+    "mel_cepstral_distortion",
+    "mos_proxy",
+    "latency_ms"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Speech Synthesis Lab",
+  "tags": [
+    "audio",
+    "tts",
+    "speech-synthesis",
+    "emotion-conditioning"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Expressive text-to-speech synthesis pipeline modulating vocal pitch, cadence, and prosody to reflect selected emotional styles.",
+  "limitations": "Synthesized voices may sound robotic or exhibit phoneme clipping on complex polysyllabic words.",
+  "responsible_use_notes": "Synthesized audio must carry watermarking or synthetic speech identification to prevent voice cloning fraud."
+}

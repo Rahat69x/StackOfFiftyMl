@@ -1,0 +1,33 @@
+{
+  "id": "ML042",
+  "slug": "42_predicting_player_behavior_in_video_games",
+  "name": "Predicting Player Behavior In Video Games",
+  "category": "Clustering / Classification",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "gameplay_sessions_sample",
+  "model": "K-Means Archetype Clustering + Churn/Purchase Classifier",
+  "metrics": [
+    "silhouette_score",
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Game Analytics Lab",
+  "tags": [
+    "game-analytics",
+    "player-behavior",
+    "clustering",
+    "retention"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Player analytics framework clustering player archetypes (achiever, explorer, socializer) and predicting in-game engagement drop-offs.",
+  "limitations": "Aggressive monetizing optimizations risk harming long-term player sentiment.",
+  "responsible_use_notes": "Maintain fair play and ethical game design; do not design manipulative dark-pattern loops."
+}

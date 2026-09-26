@@ -1,0 +1,29 @@
+{
+  "id": "ML036",
+  "slug": "36_clothing_style_recommendation_system",
+  "name": "Clothing Style Recommendation System",
+  "category": "Recommendation",
+  "type": "Recommendation",
+  "status": "ready",
+  "dataset": "fashion_catalog_sample",
+  "model": "Visual & Metadata Embedding Cosine Recommender",
+  "metrics": [
+    "precision_at_k",
+    "ndcg",
+    "style_coherence"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Fashion AI Team",
+  "tags": [
+    "fashion",
+    "recommendation",
+    "ecommerce",
+    "style"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Personalized wardrobe recommendation platform matching clothing cuts, color palettes, occasions, and personal preferences.",
+  "limitations": "Style trends evolve seasonally faster than static catalog retraining cycles.",
+  "responsible_use_notes": "Promotes body-positive and culturally inclusive styling recommendations."
+}

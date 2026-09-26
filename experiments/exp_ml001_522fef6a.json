@@ -1,0 +1,30 @@
+{
+  "experiment_id": "exp_ml001_522fef6a",
+  "project_id": "ML001",
+  "model_name": "RandomForest",
+  "status": "completed",
+  "timestamp": 1790440783.5297236,
+  "timestamp_iso": "2026-09-26T16:39:43Z",
+  "duration_seconds": 0.5,
+  "dataset_version": "v1.0",
+  "hyperparameters": {
+    "n_estimators": 10
+  },
+  "metrics": {
+    "accuracy": 0.88
+  },
+  "random_seed": 42,
+  "git_commit_hash": "HEAD-mlforge-v1.0.0",
+  "environment": {
+    "python_version": "3.13.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "os": "Windows"
+  },
+  "resource_usage": {
+    "cpu_percent": 16.6,
+    "memory_used_mb": 12926.7,
+    "memory_total_mb": 14226.9,
+    "estimated_compute_cost_usd": 1e-05
+  },
+  "error_message": null
+}

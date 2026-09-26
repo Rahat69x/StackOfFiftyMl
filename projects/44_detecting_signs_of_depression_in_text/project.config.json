@@ -1,0 +1,35 @@
+{
+  "id": "ML044",
+  "slug": "44_detecting_signs_of_depression_in_text",
+  "name": "Detecting Signs Of Depression In Text",
+  "category": "NLP / Healthcare Research",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "affective_text_sample",
+  "model": "Psycholinguistic Lexicon + Regularized Logistic Classifier",
+  "metrics": [
+    "sensitivity",
+    "specificity",
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Mental Health Research Team",
+  "tags": [
+    "mental-health",
+    "healthcare",
+    "nlp",
+    "affective-computing"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Affective computing research module analyzing linguistic indicators, self-referential pronoun density, and depressive sentiment markers.",
+  "limitations": "Humor, coping mechanisms, and contextual nuance cannot be adequately judged by automated NLP parsers.",
+  "responsible_use_notes": "CRITICAL HEALTHCARE WARNING: THIS IS NOT A DIAGNOSTIC TOOL. Under no circumstances infer or label a real individual's clinical mental health from their writings."
+}

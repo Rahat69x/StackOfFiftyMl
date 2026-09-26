@@ -1,0 +1,34 @@
+{
+  "id": "ML038",
+  "slug": "38_autism_detection_from_behavioral_data",
+  "name": "Autism Detection From Behavioral Data",
+  "category": "Classification / Healthcare Research",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "autism_screening_sample",
+  "model": "Interpretable Logistic Regression / Support Vector Classifier",
+  "metrics": [
+    "sensitivity",
+    "specificity",
+    "f1_score",
+    "roc_auc",
+    "demographic_parity"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Cognitive Sciences Team",
+  "tags": [
+    "healthcare",
+    "neurodiversity",
+    "behavioral-data",
+    "classification"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Research-oriented behavioral indicator analysis module evaluating developmental screening questionnaire responses.",
+  "limitations": "Screening inventories are culturally calibrated and cannot replace neurodevelopmental clinical observation.",
+  "responsible_use_notes": "STRICT CLINICAL DISCLAIMER: Research demo only. Under no circumstances does this provide clinical diagnosis or diagnostic classification."
+}

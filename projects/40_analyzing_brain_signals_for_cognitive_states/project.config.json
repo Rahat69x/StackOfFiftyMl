@@ -1,0 +1,34 @@
+{
+  "id": "ML040",
+  "slug": "40_analyzing_brain_signals_for_cognitive_states",
+  "name": "Analyzing Brain Signals For Cognitive States",
+  "category": "Classification / Healthcare Research",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "eeg_channels_sample",
+  "model": "Bandpower Spectral Featurizer + Support Vector Machine",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Neurotechnology Lab",
+  "tags": [
+    "eeg",
+    "neuroscience",
+    "brain-computer-interface",
+    "healthcare"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Brain-computer interface research module extracting theta/alpha/beta frequency bandpowers from EEG channels to classify cognitive focus.",
+  "limitations": "EEG leads capture substantial electromyographic muscle movement and ocular blink noise artifacts.",
+  "responsible_use_notes": "RESEARCH ONLY: Strictly for exploratory BCI studies. Do not claim clinical diagnostic validity for neurological disorders."
+}

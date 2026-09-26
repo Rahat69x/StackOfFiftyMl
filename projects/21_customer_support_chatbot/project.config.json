@@ -1,0 +1,31 @@
+{
+  "id": "ML021",
+  "slug": "21_customer_support_chatbot",
+  "name": "Customer Support Chatbot",
+  "category": "NLP",
+  "type": "NLP",
+  "status": "ready",
+  "dataset": "support_dialogues_sample",
+  "model": "Cosine Intent Embedder + Fallback Rule Engine",
+  "metrics": [
+    "intent_accuracy",
+    "fallback_rate",
+    "average_confidence"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Conversational AI Team",
+  "tags": [
+    "chatbot",
+    "nlp",
+    "customer-support",
+    "intent-matching"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Conversational customer service agent providing FAQ retrieval, context tracking, confidence thresholds, and human handoff routing.",
+  "limitations": "Cannot understand complex multistep troubleshooting or handle angry customers effectively without human intervention.",
+  "responsible_use_notes": "Must disclose to customers that they are conversing with an automated bot and provide an immediate human agent escalation button."
+}

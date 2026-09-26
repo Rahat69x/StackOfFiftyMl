@@ -1,0 +1,31 @@
+{
+  "id": "ML001",
+  "slug": "01_fruits_and_vegetables_image_classification",
+  "name": "Fruits And Vegetables Image Classification",
+  "category": "Computer Vision",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "fruits_vegetables_sample",
+  "model": "CNN Baseline / MobileNetV2",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Core CV Team",
+  "tags": [
+    "computer-vision",
+    "image-classification",
+    "cnn",
+    "transfer-learning"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Image classification system capable of classifying agricultural produce including fruits and vegetables with data augmentation, CNN baseline, and transfer learning.",
+  "limitations": "Performance may degrade under extreme occlusion, poor lighting, or rare produce cultivars.",
+  "responsible_use_notes": "Not intended for critical toxicity screening or wild mushroom foraging verification."
+}

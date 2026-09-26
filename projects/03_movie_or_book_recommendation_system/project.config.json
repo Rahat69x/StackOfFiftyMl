@@ -1,0 +1,30 @@
+{
+  "id": "ML003",
+  "slug": "03_movie_or_book_recommendation_system",
+  "name": "Movie Or Book Recommendation System",
+  "category": "Recommendation",
+  "type": "Recommendation",
+  "status": "ready",
+  "dataset": "media_ratings_sample",
+  "model": "Hybrid Content-Based + Collaborative Filtering (Cosine / SVD)",
+  "metrics": [
+    "precision_at_k",
+    "recall_at_k",
+    "ndcg",
+    "map"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge RecSys Team",
+  "tags": [
+    "recommendation",
+    "collaborative-filtering",
+    "content-based",
+    "ranking"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Recommendation engine supporting content-based filtering, collaborative filtering, similarity matrices, and Top-N recommendation ranking.",
+  "limitations": "Subject to cold-start challenges for newly released items and users with zero historical interactions.",
+  "responsible_use_notes": "Mitigate filter-bubble bias and maintain diversity in recommendations."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ML046",
+  "slug": "46_predicting_election_outcomes",
+  "name": "Predicting Election Outcomes",
+  "category": "Time Series / Forecasting",
+  "type": "Time Series",
+  "status": "ready",
+  "dataset": "polling_demographics_sample",
+  "model": "Bayesian Polling Aggregator + Trend Calibration",
+  "metrics": [
+    "brier_score",
+    "mae",
+    "calibration_error",
+    "uncertainty_interval"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Civic Data Lab",
+  "tags": [
+    "election",
+    "polling",
+    "forecasting",
+    "time-series",
+    "bayesian"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "elections"
+  ],
+  "demo_mode_available": true,
+  "description": "Electoral forecasting research module synthesizing historical polling data, demographic trends, and uncertainty bounds.",
+  "limitations": "Systemic polling non-response bias and late-breaking swing events generate wide uncertainty intervals.",
+  "responsible_use_notes": "STRICT CIVIC INTEGRITY: System must remain neutral. Strictly prohibited from voter manipulation, targeted persuasion, candidate ranking, or claiming deterministic election outcomes."
+}

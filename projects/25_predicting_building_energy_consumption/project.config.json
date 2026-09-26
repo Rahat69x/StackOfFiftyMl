@@ -1,0 +1,30 @@
+{
+  "id": "ML025",
+  "slug": "25_predicting_building_energy_consumption",
+  "name": "Predicting Building Energy Consumption",
+  "category": "Regression / Forecasting",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "hvac_building_sample",
+  "model": "Multi-layer Perceptron / Ridge Regressor",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score",
+    "cv_rmse"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Sustainability Team",
+  "tags": [
+    "energy",
+    "green-building",
+    "regression",
+    "hvac"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Building energy consumption forecasting tool combining architectural square footage, insulation ratings, weather, and occupancy trends.",
+  "limitations": "Anomalous tenant behavior (e.g. unmonitored space heaters) can induce forecast skew.",
+  "responsible_use_notes": "Aids energy audits and carbon footprint reduction planning."
+}

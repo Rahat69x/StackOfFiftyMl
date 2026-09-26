@@ -1,0 +1,31 @@
+{
+  "id": "ML049",
+  "slug": "49_anomaly_detection_in_iot_sensor_data",
+  "name": "Anomaly Detection In IoT Sensor Data",
+  "category": "Anomaly Detection / Sensor",
+  "type": "Anomaly Detection",
+  "status": "ready",
+  "dataset": "iot_telemetry_stream_sample",
+  "model": "Dynamic Threshold Isolation Forest + Exponential Moving Z-Score",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "alert_frequency"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge IoT Systems Team",
+  "tags": [
+    "iot",
+    "sensor",
+    "anomaly-detection",
+    "time-series"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "IoT time-series anomaly detection system establishing baseline operating envelopes and raising alerts on sensor drift or spikes.",
+  "limitations": "Seasonal thermal cycles can trigger false positive alerts if static thresholds are used instead of dynamic baselines.",
+  "responsible_use_notes": "Facilitates real-time industrial monitoring and equipment safety protection."
+}

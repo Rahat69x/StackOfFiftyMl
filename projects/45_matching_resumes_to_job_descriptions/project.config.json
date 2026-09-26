@@ -1,0 +1,32 @@
+{
+  "id": "ML045",
+  "slug": "45_matching_resumes_to_job_descriptions",
+  "name": "Matching Resumes To Job Descriptions",
+  "category": "NLP",
+  "type": "NLP",
+  "status": "ready",
+  "dataset": "resumes_jobs_sample",
+  "model": "Bi-Encoder Semantic Similarity Matcher + Skill Overlap Highlighter",
+  "metrics": [
+    "top_5_match_precision",
+    "cosine_similarity_avg",
+    "explainable_feature_weights"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge HR Tech Team",
+  "tags": [
+    "nlp",
+    "resume-matching",
+    "hr-tech",
+    "similarity"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "employment",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Talent matching NLP module parsing candidate resumes, matching semantic skill requirements against job postings with explainable rationale.",
+  "limitations": "Keyword stuffing and unconventional career journeys can distort match scores.",
+  "responsible_use_notes": "STRICT LABOR FAIRNESS: Must not make final hiring or screening elimination decisions; provides non-binding assistance to human recruiters."
+}

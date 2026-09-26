@@ -1,0 +1,33 @@
+{
+  "id": "ML004",
+  "slug": "04_predicting_disease_outbreaks",
+  "name": "Predicting Disease Outbreaks",
+  "category": "Time Series / Healthcare Research",
+  "type": "Time Series",
+  "status": "ready",
+  "dataset": "disease_surveillance_sample",
+  "model": "ARIMA / Ridge Autoregressor with Uncertainty Bounds",
+  "metrics": [
+    "mae",
+    "rmse",
+    "mape",
+    "prediction_intervals"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Healthcare & Analytics Team",
+  "tags": [
+    "time-series",
+    "epidemiology",
+    "healthcare",
+    "forecasting"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Time-series predictive analytics research system for epidemiological trend forecasting with confidence intervals and uncertainty quantification.",
+  "limitations": "Outbreak dynamics are sensitive to unreported cases, policy interventions, and sudden genomic mutations.",
+  "responsible_use_notes": "RESEARCH ONLY: Strictly for research and decision-support simulation. NEVER present predictions as a medical authority or clinical mandate."
+}

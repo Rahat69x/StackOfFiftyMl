@@ -1,0 +1,33 @@
+{
+  "id": "ML028",
+  "slug": "28_facial_recognition_attendance_system",
+  "name": "Facial Recognition Attendance System",
+  "category": "Computer Vision",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "face_embeddings_sample",
+  "model": "Haar Cascade / FaceNet Embedding Matcher with Cosine Distance",
+  "metrics": [
+    "verification_accuracy",
+    "far",
+    "frr",
+    "threshold_distance"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Biometrics Lab",
+  "tags": [
+    "facial-recognition",
+    "biometrics",
+    "computer-vision",
+    "security"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "personal_data",
+    "surveillance"
+  ],
+  "demo_mode_available": true,
+  "description": "Controlled biometric attendance verification research system matching face embeddings with privacy and explicit consent safeguards.",
+  "limitations": "Performance skews across different demographic lighting conditions and age variations.",
+  "responsible_use_notes": "STRICT ETHICS & PRIVACY: Requires explicit written consent, non-reversible encrypted embeddings, right-to-be-forgotten deletion flow, and prohibition of covert public surveillance."
+}

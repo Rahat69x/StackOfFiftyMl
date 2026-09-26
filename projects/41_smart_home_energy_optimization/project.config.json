@@ -1,0 +1,30 @@
+{
+  "id": "ML041",
+  "slug": "41_smart_home_energy_optimization",
+  "name": "Smart Home Energy Optimization",
+  "category": "Forecasting / Optimization",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "smart_home_appliances_sample",
+  "model": "Appliance Energy Regressor + Linear Peak-Shifting Optimizer",
+  "metrics": [
+    "mae",
+    "rmse",
+    "peak_shaving_percentage",
+    "cost_savings_estimated"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Smart Home IoT Team",
+  "tags": [
+    "smart-home",
+    "energy-optimization",
+    "iot",
+    "demand-response"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "IoT home energy management simulator scheduling deferrable loads (EV chargers, laundry, HVAC) during off-peak tariff periods.",
+  "limitations": "Resident override behavior and comfort constraints may limit theoretical cost savings.",
+  "responsible_use_notes": "Enables home automation energy savings and carbon abatement."
+}

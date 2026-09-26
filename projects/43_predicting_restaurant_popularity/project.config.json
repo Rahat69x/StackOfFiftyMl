@@ -1,0 +1,29 @@
+{
+  "id": "ML043",
+  "slug": "43_predicting_restaurant_popularity",
+  "name": "Predicting Restaurant Popularity",
+  "category": "Regression / Forecasting",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "dining_venues_sample",
+  "model": "Spatial Density + Cuisine Sentiment Gradient Booster",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Hospitality AI Lab",
+  "tags": [
+    "restaurant",
+    "popularity",
+    "hospitality",
+    "regression"
+  ],
+  "complexity_level": "beginner",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Hospitality business intelligence module forecasting table footfall, reservation demand, and review velocity for dining venues.",
+  "limitations": "Sudden health inspections or local viral social media posts produce sharp discontinuities.",
+  "responsible_use_notes": "Provides decision support for restaurateurs and culinary entrepreneurs."
+}

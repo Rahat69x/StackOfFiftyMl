@@ -1,0 +1,30 @@
+{
+  "id": "ML015",
+  "slug": "15_demand_forecasting_for_products",
+  "name": "Demand Forecasting For Products",
+  "category": "Time Series / Forecasting",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "retail_sales_sample",
+  "model": "Poisson/Gamma Regressor + Seasonal Decomposition",
+  "metrics": [
+    "mae",
+    "rmse",
+    "wmape",
+    "r2_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Retail Analytics Team",
+  "tags": [
+    "retail",
+    "demand-forecasting",
+    "inventory",
+    "time-series"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Supply chain product demand forecasting tool modeling promotional lifts, seasonality, and stocking requirements.",
+  "limitations": "Black swan events and abrupt macroeconomic supply shocks cannot be inferred from historical sales records alone.",
+  "responsible_use_notes": "Provides decision support for supply chain logistics managers."
+}

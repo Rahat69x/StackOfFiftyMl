@@ -1,0 +1,31 @@
+{
+  "id": "ML032",
+  "slug": "32_crop_disease_detection_from_images",
+  "name": "Crop Disease Detection From Images",
+  "category": "Computer Vision",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "plant_pathology_sample",
+  "model": "Plant Disease CNN Classifier (ResNet / MobileNet)",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge AgriTech Lab",
+  "tags": [
+    "agriculture",
+    "crop-disease",
+    "plant-pathology",
+    "computer-vision"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Agricultural vision system detecting foliar diseases, blights, and fungal infections on crop leaves.",
+  "limitations": "Nutrient deficiencies and pest damage can visually mimic viral/fungal symptoms.",
+  "responsible_use_notes": "AGRICULTURAL NOTICE: Educational research tool. Always consult certified local agronomists before applying chemical fungicides or treatments."
+}

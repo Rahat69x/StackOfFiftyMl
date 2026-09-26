@@ -1,0 +1,29 @@
+{
+  "id": "ML011",
+  "slug": "11_lane_detection_in_images_or_videos",
+  "name": "Lane Detection In Images Or Videos",
+  "category": "Computer Vision",
+  "type": "Computer Vision",
+  "status": "ready",
+  "dataset": "road_lane_frames_sample",
+  "model": "Canny Edge + Hough Transform Pipeline / Segmentation CNN",
+  "metrics": [
+    "iou",
+    "detection_accuracy",
+    "latency_ms"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Autonomous Systems Team",
+  "tags": [
+    "computer-vision",
+    "autonomous-driving",
+    "lane-detection",
+    "opencv"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Autonomous vehicle computer-vision module isolating road lanes, curvature polynomial fitting, and lane departure warnings.",
+  "limitations": "Degrades severely under heavy snow, unpaved terrain, faded lane markings, or direct blinding sunlight.",
+  "responsible_use_notes": "RESEARCH DEMO ONLY: Under no circumstances should this software be connected to actual steering or motor actuators in real motor vehicles."
+}

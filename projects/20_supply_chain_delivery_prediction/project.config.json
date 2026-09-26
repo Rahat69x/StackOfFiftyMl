@@ -1,0 +1,30 @@
+{
+  "id": "ML020",
+  "slug": "20_supply_chain_delivery_prediction",
+  "name": "Supply Chain Delivery Prediction",
+  "category": "Regression / Forecasting",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "logistics_shipments_sample",
+  "model": "Gradient Boosted Delivery Regressor",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score",
+    "on_time_classification_accuracy"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Logistics Lab",
+  "tags": [
+    "logistics",
+    "supply-chain",
+    "delivery-time",
+    "regression"
+  ],
+  "complexity_level": "beginner",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Logistics delivery time predictor modeling shipping origin-destination distances, carrier reliability, weather, and seasonal peaks.",
+  "limitations": "Border customs delays, geopolitical blockades, and wild weather events present high outlier deviations.",
+  "responsible_use_notes": "Designed for dispatch planning and transparent customer delivery windows."
+}

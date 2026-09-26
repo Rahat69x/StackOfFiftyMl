@@ -1,0 +1,35 @@
+{
+  "id": "ML019",
+  "slug": "19_cancer_type_prediction_from_medical_imaging",
+  "name": "Cancer Type Prediction From Medical Imaging",
+  "category": "Computer Vision / Healthcare Research",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "histopathology_imaging_sample",
+  "model": "Pretrained CNN Feature Extractor + Calibrated Classifier",
+  "metrics": [
+    "sensitivity",
+    "specificity",
+    "precision",
+    "recall",
+    "roc_auc",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Medical AI Lab",
+  "tags": [
+    "medical-imaging",
+    "healthcare",
+    "oncology",
+    "computer-vision"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [
+    "healthcare",
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Medical imaging oncology research classifier analyzing histopathological patterns with calibrated uncertainty metrics.",
+  "limitations": "Staining differences across medical institutions can cause domain shift errors.",
+  "responsible_use_notes": "STRICT MEDICAL DISCLAIMER: Research-only demonstrator. Under no circumstances should this be used for clinical diagnostic decision-making."
+}

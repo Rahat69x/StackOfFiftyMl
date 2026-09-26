@@ -1,0 +1,30 @@
+{
+  "id": "ML009",
+  "slug": "09_game_playing_model_training",
+  "name": "Game-Playing Model Training",
+  "category": "Reinforcement Learning",
+  "type": "Reinforcement Learning",
+  "status": "ready",
+  "dataset": "gym_game_episodes_sample",
+  "model": "Deep Q-Network (DQN) / Tabular Q-Learning Agent",
+  "metrics": [
+    "average_reward",
+    "episode_length",
+    "win_rate",
+    "exploration_epsilon"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge RL Lab",
+  "tags": [
+    "reinforcement-learning",
+    "q-learning",
+    "dqn",
+    "game-ai"
+  ],
+  "complexity_level": "advanced",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Reinforcement learning research environment where an autonomous agent learns optimal policies in a controlled discrete game grid.",
+  "limitations": "Agent policies are bounded by the exact mechanics of the simulated game environment.",
+  "responsible_use_notes": "Controlled simulation environment for reinforcement learning research."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ML005",
+  "slug": "05_stock_price_prediction",
+  "name": "Stock Price Prediction",
+  "category": "Time Series / Finance",
+  "type": "Time Series",
+  "status": "ready",
+  "dataset": "market_prices_sample",
+  "model": "Gradient Boosting Regressor / LSTM Baseline with Backtesting",
+  "metrics": [
+    "mae",
+    "rmse",
+    "directional_accuracy",
+    "sharpe_ratio_simulation"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Quantitative Team",
+  "tags": [
+    "finance",
+    "time-series",
+    "backtesting",
+    "regression"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "finance"
+  ],
+  "demo_mode_available": true,
+  "description": "Financial time-series forecasting research module featuring technical indicator extraction, lagging windows, and historical backtesting.",
+  "limitations": "Financial markets follow stochastic non-stationary walks heavily influenced by macroeconomic shocks.",
+  "responsible_use_notes": "FINANCIAL DISCLAIMER: Research and educational experimentation only. Absolutely not financial or investment advice."
+}

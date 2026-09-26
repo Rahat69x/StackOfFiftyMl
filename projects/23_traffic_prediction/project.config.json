@@ -1,0 +1,29 @@
+{
+  "id": "ML023",
+  "slug": "23_traffic_prediction",
+  "name": "Traffic Prediction / Traffic Flow Prediction",
+  "category": "Time Series / Forecasting",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "road_sensors_traffic_sample",
+  "model": "Spatio-Temporal Lagged Regressor",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Smart Cities Team",
+  "tags": [
+    "traffic",
+    "smart-city",
+    "time-series",
+    "forecasting"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Urban traffic density and vehicle speed forecasting engine leveraging spatial road graph nodes and temporal rush-hour cycles.",
+  "limitations": "Immediate impacts of sudden unrecorded traffic accidents or construction detours require real-time telemetry updates.",
+  "responsible_use_notes": "Supports civil municipal traffic light timing and commuter navigation optimization."
+}

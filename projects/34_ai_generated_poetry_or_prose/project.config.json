@@ -1,0 +1,29 @@
+{
+  "id": "ML034",
+  "slug": "34_ai_generated_poetry_or_prose",
+  "name": "AI-Generated Poetry Or Prose",
+  "category": "Generative AI",
+  "type": "Generative AI",
+  "status": "ready",
+  "dataset": "literary_corpus_sample",
+  "model": "Character / Word-level Recurrent & Transformer Text Generator",
+  "metrics": [
+    "perplexity",
+    "token_entropy",
+    "repetition_penalty"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Creative AI Lab",
+  "tags": [
+    "generative-ai",
+    "creative-writing",
+    "nlp",
+    "poetry"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Controlled generative language module crafting rhythmic verse and prose with configurable temperature, top-k, and style seeds.",
+  "limitations": "Can produce semantic repetition or nonsensical metaphors when conditioned on ultra-long horizons.",
+  "responsible_use_notes": "All generated creative prose must be explicitly identified as AI-synthesized."
+}

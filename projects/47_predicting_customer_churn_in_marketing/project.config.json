@@ -1,0 +1,33 @@
+{
+  "id": "ML047",
+  "slug": "47_predicting_customer_churn_in_marketing",
+  "name": "Predicting Customer Churn In Marketing",
+  "category": "Classification",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "marketing_campaigns_sample",
+  "model": "Calibrated Logistic Regression / Random Forest Classifier",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "lift_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Marketing Science Team",
+  "tags": [
+    "marketing",
+    "churn",
+    "campaign-interaction",
+    "classification"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Marketing campaign analytics engine identifying customer churn risks based on email open rates, loyalty points, and campaign decay.",
+  "limitations": "Privacy changes in email tracking (e.g. proxy caching) introduce noise into open-rate features.",
+  "responsible_use_notes": "Empowers marketing teams to optimize communication frequency and avoid customer fatigue."
+}

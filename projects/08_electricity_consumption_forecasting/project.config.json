@@ -1,0 +1,30 @@
+{
+  "id": "ML008",
+  "slug": "08_electricity_consumption_forecasting",
+  "name": "Electricity Consumption Forecasting",
+  "category": "Time Series",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "grid_consumption_sample",
+  "model": "Multi-Horizon Lagged Regressor (XGBoost/RandomForest)",
+  "metrics": [
+    "mae",
+    "rmse",
+    "r2_score",
+    "mape"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Energy Team",
+  "tags": [
+    "time-series",
+    "smart-grid",
+    "energy",
+    "forecasting"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Time-series forecasting system for electrical load and grid consumption incorporating temporal cyclic features and weather indicators.",
+  "limitations": "Unprecedented grid outages and unannounced industrial shutdowns cannot be anticipated from historical cyclical data alone.",
+  "responsible_use_notes": "Intended to assist grid balancing simulations and energy conservation strategies."
+}

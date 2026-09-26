@@ -1,0 +1,30 @@
+{
+  "id": "ML012",
+  "slug": "12_personalized_learning_recommendation_system",
+  "name": "Personalized Learning Recommendation System",
+  "category": "Recommendation",
+  "type": "Recommendation",
+  "status": "ready",
+  "dataset": "student_curriculum_sample",
+  "model": "Knowledge Tracing + Content Recommender",
+  "metrics": [
+    "precision_at_k",
+    "ndcg",
+    "curriculum_coverage"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge EdTech Team",
+  "tags": [
+    "recommendation",
+    "education",
+    "personalized-learning"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Educational recommendation platform providing adaptive study topics, difficulty levels, and personalized remedial materials.",
+  "limitations": "Cannot assess neurodivergent learning modalities or external socioeconomic stressors affecting test completion.",
+  "responsible_use_notes": "Avoid making unsupported judgments about a student's innate ability or educational worth."
+}

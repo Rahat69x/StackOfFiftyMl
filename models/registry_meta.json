@@ -1,0 +1,32 @@
+{
+  "ML001": [
+    {
+      "model_id": "ML001_1.0.0_1790440783",
+      "project_id": "ML001",
+      "version": "1.0.0",
+      "artifact_path": "/tmp/model.joblib",
+      "metrics": {
+        "accuracy": 0.85
+      },
+      "parameters": {},
+      "status": "archived",
+      "registered_at": 1790440783.527276,
+      "registered_at_iso": "2026-09-26T16:39:43Z",
+      "lineage": {}
+    },
+    {
+      "model_id": "ML001_1.0.0_1790441171",
+      "project_id": "ML001",
+      "version": "1.0.0",
+      "artifact_path": "/tmp/model.joblib",
+      "metrics": {
+        "accuracy": 0.85
+      },
+      "parameters": {},
+      "status": "active",
+      "registered_at": 1790441171.0299165,
+      "registered_at_iso": "2026-09-26T16:46:11Z",
+      "lineage": {}
+    }
+  ]
+}

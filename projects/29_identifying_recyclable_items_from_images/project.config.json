@@ -1,0 +1,31 @@
+{
+  "id": "ML029",
+  "slug": "29_identifying_recyclable_items_from_images",
+  "name": "Identifying Recyclable Items From Images",
+  "category": "Computer Vision",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "waste_sorting_sample",
+  "model": "Fine-Tuned Transfer Learning CNN (MobileNet)",
+  "metrics": [
+    "accuracy",
+    "precision",
+    "recall",
+    "f1_score",
+    "confusion_matrix"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge GreenTech Lab",
+  "tags": [
+    "recycling",
+    "sustainability",
+    "computer-vision",
+    "waste-management"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Waste categorization computer vision model identifying paper, plastic, glass, metal, and organic compostable materials.",
+  "limitations": "Crushed, soiled, or composite multi-material packaging (e.g. foil-lined cardboard) can lead to misclassification.",
+  "responsible_use_notes": "Aids automated robotic recycling sorting facilities and consumer education."
+}

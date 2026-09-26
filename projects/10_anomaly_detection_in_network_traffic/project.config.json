@@ -1,0 +1,33 @@
+{
+  "id": "ML010",
+  "slug": "10_anomaly_detection_in_network_traffic",
+  "name": "Anomaly Detection In Network Traffic",
+  "category": "Security / Anomaly Detection",
+  "type": "Anomaly Detection",
+  "status": "ready",
+  "dataset": "network_packets_sample",
+  "model": "Isolation Forest + Robust Scaler / Autoencoder",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "anomaly_ratio"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge CyberSec Team",
+  "tags": [
+    "security",
+    "anomaly-detection",
+    "network",
+    "cybersecurity"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [
+    "personal_data"
+  ],
+  "demo_mode_available": true,
+  "description": "Cybersecurity anomaly detection engine analyzing packet headers, flow rates, and protocol behaviors to flag intrusions.",
+  "limitations": "Zero-day network attacks mimicking legitimate high-bandwidth services may produce false negatives.",
+  "responsible_use_notes": "Automated security alerts must be reviewed by security operations analysts before enacting automated network cutoffs."
+}

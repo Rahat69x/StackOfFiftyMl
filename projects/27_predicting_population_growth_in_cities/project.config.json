@@ -1,0 +1,30 @@
+{
+  "id": "ML027",
+  "slug": "27_predicting_population_growth_in_cities",
+  "name": "Predicting Population Growth In Cities",
+  "category": "Time Series",
+  "type": "Regression",
+  "status": "ready",
+  "dataset": "demographic_census_sample",
+  "model": "Exponential Smoothing + Demographic Factor Regressor",
+  "metrics": [
+    "mae",
+    "rmse",
+    "mape",
+    "r2_score"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Urban Analytics Lab",
+  "tags": [
+    "demographics",
+    "urban-planning",
+    "time-series",
+    "population"
+  ],
+  "complexity_level": "beginner",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Demographic forecasting module projecting municipal urban population growth from birth rates, migration velocity, and economic indicators.",
+  "limitations": "Cannot predict sudden refugee influxes or mass outward relocations caused by natural disasters.",
+  "responsible_use_notes": "Intended for municipal civil infrastructure capacity planning (schools, water, transit)."
+}

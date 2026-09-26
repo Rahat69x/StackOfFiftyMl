@@ -1,0 +1,31 @@
+{
+  "id": "ML022",
+  "slug": "22_machine_failure_prediction_from_sensor_data",
+  "name": "Machine Failure Prediction From Sensor Data",
+  "category": "Anomaly Detection / Sensor",
+  "type": "Classification",
+  "status": "ready",
+  "dataset": "telemetry_sensors_sample",
+  "model": "Random Forest Predictive Maintenance Classifier",
+  "metrics": [
+    "precision",
+    "recall",
+    "f1_score",
+    "roc_auc",
+    "early_warning_lead_time"
+  ],
+  "version": "1.0.0",
+  "owner": "MLForge Industrial IoT Team",
+  "tags": [
+    "predictive-maintenance",
+    "iiot",
+    "sensor",
+    "failure-prediction"
+  ],
+  "complexity_level": "intermediate",
+  "responsible_use_flags": [],
+  "demo_mode_available": true,
+  "description": "Predictive maintenance framework monitoring thermal dissipation, rotational speed, torque, and vibration fatigue in industrial machinery.",
+  "limitations": "Requires periodic recalibration when physical components undergo routine servicing or replacement.",
+  "responsible_use_notes": "Assists preventative maintenance to reduce industrial downtime and worker safety hazards."
+}
